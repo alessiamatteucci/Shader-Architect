@@ -26,6 +26,8 @@ La skill si occupa delle **decisioni creative**: scelta tra `fill` ed `effect`, 
 - **Server MCP ufficiale di Figma** collegato, con gli strumenti `create_shader`, `get_shader`, `update_shader`, `list_shaders`
 - **Plugin/skill Figma** installato, con `figma-shaders`
 
+Gli shader vengono creati nell'**account Figma di chi usa la skill**: quello collegato al proprio server MCP di Figma. La skill non contiene account, chiavi o piani preimpostati: li legge dal collegamento attivo (`whoami`) e, se l'account ha più piani, chiede in quale salvare lo shader.
+
 Senza il collegamento a Figma la skill produce comunque un brief tecnico, etichettato chiaramente come *brief only — not created in Figma*.
 
 ## Installazione
@@ -100,7 +102,7 @@ shader-architect/
 **Shader Architect** is an agent skill for designing, creating and refining native Figma shaders through the official Figma MCP server, from Claude Code or Codex. Describe a material or attach a reference and the assistant turns it into a controllable Figma shader — implementation brief, parameter set, WebGPU/WGSL source, creation via MCP and a try-in-Figma link.
 
 - **Modes:** `/ANALYZE` (study a reference, no changes), `/CREATE` (new shader), `/REFINE` (targeted edit preserving what works).
-- **Requires:** the official Figma MCP server and the `figma-shaders` skill. Without them, the skill outputs a clearly labelled technical brief.
+- **Requires:** the official Figma MCP server, connected to the user's own Figma account (shaders are created there; nothing is hardcoded), and the `figma-shaders` skill. Without them, the skill outputs a clearly labelled technical brief.
 - **Install:** copy the `shader-architect/` folder into `~/.claude/skills/` (Claude Code) or `~/.codex/skills/` (Codex).
 - The skill answers in the user's language (Italian or English); briefs and code identifiers are written in English.
 
