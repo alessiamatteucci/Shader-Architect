@@ -90,7 +90,7 @@ shader-architect/
 
 - Gli esempi sono **ricette di progetto**, non shader già compilati o verificati visivamente.
 - «Compilato» e «verificato visivamente» sono stati distinti: la skill dichiara sempre quale dei due è stato raggiunto.
-- Il contratto tecnico è stato verificato il 20 ottobre 2026 sul plugin Figma 16.0.0 (`figma-shaders`). Le API di Figma possono cambiare: la skill rilegge sempre la documentazione ufficiale installata prima di eseguire.
+- Il contratto tecnico è stato verificato il 20 ottobre 2026 sulla skill ufficiale `figma-shaders` del plugin Figma per Claude Code. Le API di Figma possono cambiare: la skill rilegge sempre la documentazione ufficiale installata prima di eseguire.
 - La repo non contiene credenziali, immagini di reference o plugin da installare dentro Figma.
 
 ---
