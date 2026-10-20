@@ -103,3 +103,7 @@ shader-architect/
 - **Requires:** the official Figma MCP server and the `figma-shaders` skill. Without them, the skill outputs a clearly labelled technical brief.
 - **Install:** copy the `shader-architect/` folder into `~/.claude/skills/` (Claude Code) or `~/.codex/skills/` (Codex).
 - The skill answers in the user's language (Italian or English); briefs and code identifiers are written in English.
+
+## Licenza
+
+[MIT](LICENSE) © 2026 Alessia Matteucci
